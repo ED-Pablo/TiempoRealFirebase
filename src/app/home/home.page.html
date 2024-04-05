@@ -1,0 +1,87 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Dogmática en Tiempo Real Firebase
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-grid>
+    <ion-row>
+
+      <ion-col>
+        <ion-card class="custom-card">
+            <img alt="Imágen Baño" src="/assets/bano.png" />
+
+          <div class="card-content">
+              <ion-card-title>Baño</ion-card-title>
+              <ion-icon name="bulb" [ngStyle]="{'color': valores_db && valores_db.bano ? 'yellow' : ''}"></ion-icon>
+          </div>
+
+        </ion-card>
+    </ion-col>
+
+
+
+    <ion-col>
+      <ion-card class="custom-card">
+          <img alt="Imágen Cocina" src="/assets/cocina.jpeg" />
+
+        <div class="card-content">
+            <ion-card-title>Cocina</ion-card-title>
+            <ion-icon name="bulb" [ngStyle]="{'color': valores_db && valores_db.cocina ? 'yellow' : ''}"></ion-icon>
+        </div>
+      </ion-card>
+  </ion-col>
+
+  <ion-col>
+    <ion-card class="custom-card">
+        <img alt="Imágen Comedor" src="/assets/comedor.jpeg" />
+
+      <div class="card-content">
+          <ion-card-title>Comedor</ion-card-title>
+          <ion-icon name="bulb" [ngStyle]="{'color': valores_db && valores_db.comedor ? 'yellow' : ''}"></ion-icon>
+      </div>
+    </ion-card>
+</ion-col>
+
+<ion-col>
+  <ion-card class="custom-card">
+      <img alt="Imágen Dormitorio" src="/assets/dormitorio.jpeg" />
+
+    <div class="card-content">
+        <ion-card-title>Dormitorio</ion-card-title>
+        <ion-icon name="bulb" [ngStyle]="{'color': valores_db && valores_db.dormitorio ? 'yellow' : ''}"></ion-icon>
+    </div>
+  </ion-card>
+</ion-col>
+
+<ion-col>
+  <ion-card class="custom-card">
+      <img alt="Imágen Garage" src="/assets/garage.jpeg" />
+
+    <div class="card-content">
+        <ion-card-title>Garage</ion-card-title>
+        <ion-icon name="bulb" [ngStyle]="{'color': valores_db && valores_db.garage ? 'yellow' : ''}"></ion-icon>
+    </div>
+  </ion-card>
+</ion-col>
+
+<ion-col>
+  <ion-card class="custom-card">
+      <img alt="Imágen Sala" src="/assets/sala.jpg" />
+
+    <div class="card-content">
+        <ion-card-title>Sala</ion-card-title>
+        <ion-icon name="bulb" [ngStyle]="{'color': valores_db && valores_db.sala ? 'yellow' : ''}"></ion-icon>
+    </div>
+  </ion-card>
+</ion-col>
+
+
+  </ion-row>
+</ion-grid>
+
+</ion-content>
